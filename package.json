@@ -1,0 +1,23 @@
+{
+  "name": "crowler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gabriel Lins",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "jest": "^25.2.3",
+    "nodemon": "^2.0.2"
+  }
+}
