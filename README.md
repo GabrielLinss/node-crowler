@@ -12,3 +12,8 @@
 # To run tests
 
 - run **npm test** or **yarn test**
+
+# Endpoint
+
+- GET /verifySite
+- Query Param: url=https://www.smartmei.com.br
