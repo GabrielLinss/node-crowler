@@ -1,8 +1,16 @@
-const requestPromise = require('request-promise');
-const cheerio = require('cheerio');
+import requestPromise from 'request-promise';
+import cheerio from 'cheerio';
 
-module.exports = async function spySite(url) {
-    const result = {};
+interface Result {
+    plan?: string,
+    charge?: string,
+    transfer?: string,
+    paymentMonthly?: string,
+    status?: string
+}
+
+export default async function spySite(url: string): Promise<Result> {
+    const result: Result = {};
 
     await requestPromise(url, function(error, response, body) {
         if (error) return { error: 'An error ocurred' };
